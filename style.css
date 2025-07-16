@@ -189,7 +189,7 @@ body {
   flex-wrap: wrap;
 }  */
 
-.books-grid {
+/* .books-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -204,10 +204,28 @@ body {
   background-color: #fff;
   border-radius: 10px;
   padding: 1rem;
-  width: 400px; /* or 220px */
+  width: 400px; or 220px 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+} */
+
+.books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.book-card {
+  flex: 1 1 280px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
+
 
 .book-card:hover {
   transform: translateY(-5px);
