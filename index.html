@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost in Books</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost in Books</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">📖 LOST IN BOOKS</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#releases">New Releases</a>
-            <a href="#support">Support</a>
-            <input type="text" placeholder="Search..." id="searchBar">
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Lost in Books</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#books">Books</a></li>
 
-    <main>
-        <section id="home">
-            <h1>One more chapter?</h1>
-            <a class="cta" href="#releases">Browse Books</a>
-        </section>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Genres &#9662;</a>
+          <div class="dropdown-content">
+            <a href="Horror.html">Horror</a>
+            <a href="romance.html">Romance</a>
+            <span class="coming-soon">Others coming soon</span>
+          </div>
+        </li>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are an indie publishing studio dedicated to bringing our readers captivating and original stories. Our passion is to help you get lost in a good book.</p>
-        </section>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="comingsoon.html">Coming Soon</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+    <section class="hero">
+      <h1 class="hero-title">One more chapter?</h1>
+      <p class="hero-subtitle">New book every week</p>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="logo.png" alt="Lost in Books Logo" />
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>We are a small indie publishing team passionate about storytelling. Every week, we release a new book to inspire readers around the world — whether you're into thrillers, romance, sci-fi, or poetry, we've got a story for you.</p>
+          <p>Our mission is simple: make reading exciting, accessible, and unforgettable. Welcome to <strong>Lost in Books</strong>.</p>
+        </div>
+      </div>
+    </section>
+    <section id="books" class="books-section">
+      <div class="books-container">
+        <h2>New Releases!</h2>
+        <div class="books-grid">
+          <div class="book-card">
+            <a href="https://www.amazon.com/dp/B0FH2RVQVH" target="_blank">
+              <img src="Cover1Whispers.png" alt="Book Title 1">
+              <p>Whispers in The Fog</p>
+            </a>
+          </div>
 
-        <section id="releases">
-            <h2>New Releases</h2>
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/61AxMYCu5JL._SL1500_.jpg" alt="Whispers in the Fog">
-                <div>
-                    <h3>Whispers in the Fog</h3>
-                    <p>By Alex Paimer</p>
-                    <p>A small coastal town hides deadly secrets as a mysterious fog descends.</p>
-                    <a href="https://www.amazon.com/dp/B0FH2RVQVH" target="_blank">Amazon</a>
-                </div>
-            </div>
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/51KcPz+N0uL._SL1000_.jpg" alt="What If...">
-                <div>
-                    <h3>What If...</h3>
-                    <p>By Adela Liptakova</p>
-                    <p>One choice can change everything. An exploration of love, loss, and fate.</p>
-                    <a href="https://www.amazon.com/What-If-Adela-Liptakova-ebook/dp/B0FHBNWB29" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </section>
+          <div class="book-card">
+            <a href="https://www.amazon.com/dp/B0FHBNWB29" target="_blank">
+              <img src="Cover2Whatif.png" alt="Book Title 2" />
+              <p>What If?</p>
+            </a>
+          </div>
+      <!-- Add more book cards as needed -->
+        </div>
+      </div>
+    </section>
 
-        <section id="subscribe">
-            <h2>Subscribe for Updates</h2>
-            <form action="https://formspree.io/f/yourformid" method="POST">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
+    <section id="newsletter" class="newsletter-section">
+      <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get weekly book updates straight to your inbox.</p>
+        <form action="https://formspree.io/f/mldleddw" method="POST" class="newsletter-form">
+          <input type="email" name="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
 
-        <section id="support">
-            <h2>Support / Contact</h2>
-            <p>Email us at: <a href="mailto:3lost.in.books3@gmail.com">3lost.in.books3@gmail.com</a></p>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Lost in Books</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <h2>Support & Contact</h2>
+        <p>If you have any questions, feedback, or need help, feel free to reach out to us!</p>
+            
+        <form class="contact-form" action="https://formspree.io/f/xanbyykd" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  <script src="script.js"></script>
 </body>
 </html>
