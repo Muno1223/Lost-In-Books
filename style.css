@@ -181,27 +181,24 @@ body {
   color: #222;
 }
 
-/* .books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-}  */
-
+/* 
 .books-grid {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-}
-
-
-/* .book-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
 }  */
+
+.books-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;  
+  padding-bottom: 1rem;    
+  scroll-behavior: smooth;  
+}
 
 .book-card {
   background-color: #fff;
