@@ -128,7 +128,7 @@ body {
 /* ABOUT SECTION */
 .about-section {
   padding: 10rem 2rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .about-container {
@@ -189,7 +189,7 @@ body {
 .books-section {
   padding: 6rem 2rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 .books-section:nth-of-type(even) {
@@ -357,6 +357,16 @@ body {
   background-color: #444;
 }
 
-html {
-  scroll-behavior: smooth;
+.comingsoon-center {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.comingsoon-center h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #222;
 }
